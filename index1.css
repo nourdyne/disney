@@ -1,0 +1,126 @@
+body{
+	background-image: url(https://prod-static.disney-plus.net/us-west-2/builds/e76798ab2a732a884562763cbd19b969a80dcd5b_1606148151180/node_modules/dss-junglebook/components/themes/images/background.png);
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+/*diapo*/
+
+.slider{
+	overflow: hidden;
+	margin: 150px auto;
+}
+
+.slides{
+	width: calc(500px * 3);
+	animation: glisse 10s infinite;
+	display: flex;
+}
+
+.slide{
+	float: left;
+
+}
+
+@keyframes glisse {
+
+	0%{
+		transform: translateX(0);
+	}
+
+
+	50%{
+		transform: translateX(-94%);
+	}
+
+	100%{
+		transform: translateX(0);
+	}
+
+}
+
+/*PASTILLE*/
+
+.video-card-container{
+	position: relative;
+	width: 75%;
+	margin: auto;
+	height: 10vw;
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	margin-left: 1%;
+}
+
+.video-card{
+	position: relative;
+	min-width: calc(100%/5 - 10px);
+	width: calc(100%/5 - 10px);
+	height: 90%;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #2B2D39;
+	margin-right: 3%;
+	border-color: white;
+}
+
+.video-card-image,
+.card-video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-video{
+	position: absolute;
+}
+
+.video-card:hover .video-card-image{
+	display: none;
+}
+
+/*FOOTER*/
+
+.footer{
+	background-color: #000;
+	width: 100%;
+}
+
+footer ul li{
+	font-size: 90%;
+	font-family: 'Nunito', sans-serif;
+}
+
+.footer_info{
+	margin-left: 50%;
+	height: 6%;
+	width: 10%;
+}
+
+.imagefin{
+	height: 10%;
+	width: 80%;
+}
+
+.footer_menu{
+	margin-left: 5%;
+	display: flex;
+	gap: 2%;
+}
+
+li a{
+	display: flex;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer_menu2{
+	display: flex;
+	gap: 2%;
+	margin-left: 35%;
+}
+
+.footer_menu3{
+	display: flex;
+	margin-left: 45%;
+}

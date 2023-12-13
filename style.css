@@ -1,0 +1,225 @@
+
+
+body{
+	background-image: url(https://prod-static.disney-plus.net/us-west-2/builds/e76798ab2a732a884562763cbd19b969a80dcd5b_1606148151180/node_modules/dss-junglebook/components/themes/images/background.png);
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+header{
+	display: flex;
+}
+
+.logodebut{
+	width: 100px;
+	height: 75px;
+}
+
+.icone{
+	width: 20px;
+	height: 20px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.debut{
+	color: white;
+	font-family: arial;
+	margin-top: 33px;
+	margin-left: 20px;
+
+}
+
+.profil{
+	width: 50px;
+	height: 50px;
+	margin-top: 25px;
+	margin-left: 250px;
+}
+
+
+/*diapo*/
+
+.slider{
+	overflow: hidden;
+	margin: 50px auto;
+}
+
+.slides{
+	width: calc(500px * 3);
+	animation: glisse 10s infinite;
+	display: flex;
+}
+
+.slide{
+	float: left;
+
+}
+
+@keyframes glisse {
+
+	0%{
+		transform: translateX(0);
+	}
+
+
+	50%{
+		transform: translateX(-94%);
+	}
+
+	100%{
+		transform: translateX(0);
+	}
+
+}
+
+/*PASTILLE*/
+
+.video-card-container{
+	position: relative;
+	width: 75%;
+	margin: auto;
+	height: 10vw;
+	display: flex;
+	margin-top: 43px;
+	justify-content: space-between;
+	margin-left: 1%;
+}
+
+.video-card{
+	position: relative;
+	min-width: calc(100%/5 - 10px);
+	width: calc(100%/5 - 10px);
+	height: 90%;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #2B2D39;
+	margin-right: 3%;
+	border-color: white;
+}
+
+.video-card-image,
+.card-video{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.card-video{
+	position: absolute;
+}
+
+.video-card:hover .video-card-image{
+	display: none;
+}
+
+/*NOURDYNE*/
+
+
+.titre{
+	color: white;
+	font-size: small;
+	font-weight: bold;
+	font-family: arial;
+	margin-bottom: 10px;
+	margin-top: 25px;
+}
+
+.abc{
+	width: 325px;
+	height: 179.78px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+}
+
+.insérer1{
+	width: 325px;
+	height: 179.78px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+	border-bottom: 3px solid white;
+}
+
+.insérer2{
+	width: 325px;
+	height: 179.78px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+	border-bottom: 3px solid white;
+}
+
+.insérer3{
+	width: 325px;
+	height: 179.78px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+	border-bottom: 3px solid white;
+}
+
+.insérer4{
+	width: 325px;
+	height: 179.78px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+	border-bottom: 3px solid white;
+}
+
+.insérer5{
+	width: 200px;
+	height: 112.500px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 5%;
+	border-bottom: 3px solid white;
+}
+
+.footer{
+	margin-top: 50px;
+	background-color: #000;
+	width: 100%;
+}
+
+footer ul li{
+	font-size: 90%;
+	font-family: 'Nunito', sans-serif;
+}
+
+.footer_info{
+	margin-left: 50%;
+	height: 6%;
+	width: 10%;
+}
+
+.imagefin{
+	height: 10%;
+	width: 80%;
+}
+
+.footer_menu{
+	margin-left: 5%;
+	display: flex;
+	gap: 2%;
+}
+
+li a{
+	display: flex;
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer_menu2{
+	display: flex;
+	gap: 2%;
+	margin-left: 35%;
+}
+
+.footer_menu3{
+	display: flex;
+	margin-left: 45%;
+}
+

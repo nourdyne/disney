@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+	<title>Disney</title>
+</head>
+<body>
+
+ 
+
+ 	<header>
+ 		<img class="logodebut" src="DISNEY.jpg">
+ 		<img class="icone" src="maison.png">
+ 			<p class="debut">ACCEUIL</p>
+		<img class="icone" src="loupe.png">
+			<p class="debut">RECHERCHE</p>
+		<img class="icone" src="plus.png">
+			<p class="debut">MA LISTE</p>
+		<img class="icone" src="etoile.png">
+			<p class="debut">ORIGINALS</p>
+		<img class="icone" src="bande.png">
+			<p class="debut">FILMS</p>
+		<img class="icone" src="tv.png">
+			<p class="debut">SÉRIES</p>
+		<img class="profil" src="badge.png">
+
+ 	</header>
+
+	<div class="slider">
+		<div class="slides">
+			<div class="slide"><img src="diapo1.jpg" alt="" /></div>
+			<div class="slide"><img src="diapo2.jpg" alt="" /></div>	
+	</div>
+
+	<div class="video-card-container">
+		<div class="video-card">
+			<img src="disney.png" class="video-card-image" alt="">
+			<video src="disney.mp4" mute loop class="card-video"></video>
+		</div>
+		<div class="video-card">
+			<img src="pixar.png" class="video-card-image" alt="">
+			<video src="pixar.mp4" mute loop class="card-video"></video>
+		</div>
+		<div class="video-card">
+			<img src="marvel.png" class="video-card-image" alt="">
+			<video src="marvel.mp4" mute loop class="card-video"></video>
+		</div>	
+		<div class="video-card">
+			<img src="starwars.png" class="video-card-image" alt="">
+			<video src="star-wars2.mp4" mute loop class="card-video"></video>
+		</div>
+		<div class="video-card">
+			<img src="nationalgeographie.png" class="video-card-image" alt="">
+			<video src="geographic.mp4" mute loop class="card-video"></video>
+		</div>
+		<div class="video-card">
+			<img src="star.png" class="video-card-image" alt="">
+			<video src="star2.mp4" mute loop class="card-video"></video>
+		</div>
+		</div>
+	</div>
+
+	<script>
+		const videoCards = [...document.querySelectorAll('video-card')];
+
+		videoCards.forEach item => 
+			item.addEventListener('mouseover', () => {
+				let video = item.children[1];
+				video.play();
+			})	
+			item.addEventListener('mouseleave', () => {
+				let video = item.children[1];
+				video.pause();
+			})	
+	</script>
+
+
+<!--NOURDYNE-->
+
+
+    <p class="titre">Nouveau sur Disney+</p>
+	<div class="ligne1">
+		<img class="abc" src="a.jpg">
+		<img class="abc" src="b.jpg">
+		<img class="abc" src="c.jpg">
+		<img class="abc" src="d.jpg">
+	</div>
+	<p class="titre">Star : les immanquables</p>
+	<div class="ligne2">
+		<img class="abc" src="e.jpg">
+		<img class="abc" src="f.jpg">
+		<img class="abc" src="g.jpg">
+		<img class="abc" src="h.jpg">
+	</div>
+	<p class="titre">Poursuivre la lecture</p>
+	<div class="Ligne3">
+		<img class="insérer1" src="i.jpg">
+		<img class="insérer2" src="j.jpg">
+		<img class="insérer3" src="k.jpg">
+		<img class="insérer4" src="l.jpg">
+	</div>
+
+	<footer class="footer">
+    	<div class="footer_info">
+    		<img class="imagefin" src="DISNEY.jpg">
+    	</div>
+    	<div>
+    		<ul class="footer_menu">
+				<li><a href="#">Règles de Respect de la Vie Privée</a></li>
+				<li><a href="#">Droits Données dans l'UE et au R-U</a></li>
+				<li><a href="#">A propos de Disney+</a></li>
+				<li><a href="#">Conditions générales d'abonnement</a></li>
+				<li><a href="#">Aide</a></li>
+				<li><a href="#">Appareils compatibles</a></li>
+				<li><a href="#">A propos de Disney+</a></li>
+     		</ul>
+    	</div>
+		<div>
+			<ul class="footer_menu2">
+				<li><a href="#">Publicités ciblées par centres d'intérêt</a></li>
+				<li><a href="#">Gérer vos préférences</a></li>
+			</ul>
+		</div>
+		<div>
+			<ul class="footer_menu3">
+				<li><a href="#">© Disney. Tous droits réservés.</a></li>
+			</ul>
+		</div>
+
+    </footer>
+ 
+</body>
+</html>
